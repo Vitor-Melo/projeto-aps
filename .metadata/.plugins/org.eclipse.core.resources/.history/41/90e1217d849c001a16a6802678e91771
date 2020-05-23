@@ -1,0 +1,19 @@
+package aplicacao;
+
+import dao.DaoFactory;
+import dao.UsuarioDao;
+import model.Usuario;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		UsuarioDao usuarioDao = DaoFactory.createUsuarioDao();
+		
+		Usuario newUsuario = new Usuario("vitor", "3413424342", 18, "vitor@example.com");
+		usuarioDao.inserir(newUsuario);
+		System.out.println("Inserted! New id = " + newUsuario.getId());
+		
+		
+	}
+}

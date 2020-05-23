@@ -1,0 +1,58 @@
+package implementacao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import bd.BD;
+import bd.BdException;
+import dao.UsuarioDao;
+import model.Relatorio;
+import model.Usuario;
+
+public class UsuarioDaoJDBC implements UsuarioDao {
+
+	private Connection conn;
+
+	public UsuarioDaoJDBC(Connection conn) {
+		this.conn = conn;
+	}
+
+	@Override
+	public void inserir(Usuario obj) {
+		
+	}
+
+	@Override
+	public void atualizar(Usuario obj) {
+
+	}
+
+	@Override
+	public void deletarPorId(Integer id) {
+		
+	}
+
+	@Override
+	public Usuario encontrarPorId(Integer id) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Usuario> todos() {
+		
+		
+		return null;
+	}
+
+	@Override
+	public List<Relatorio> todosUsuarios(Usuario usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
